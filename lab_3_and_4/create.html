@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Додати кліп</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Додати новий кліп</h1>
+  </header>
+
+  <form id="createForm">
+    <label>Виконавець:</label>
+    <input type="text" id="artist" required>
+
+    <label>Назва пісні:</label>
+    <input type="text" id="title" required>
+
+    <label>Тривалість (сек):</label>
+    <input type="number" id="duration" min="10" required>
+
+    <label>Перегляди:</label>
+    <input type="number" id="views" min="0" required>
+
+    <label>Фото (URL):</label>
+    <input type="url" id="image" placeholder="Вставте URL фото або залиште пустим">
+
+    <div class="form-buttons">
+      <button type="submit">Додати кліп</button>
+      <button type="button" id="backBtn">Назад</button>
+    </div>
+  </form>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <script src="create.js"></script>
+</body>
+</html>

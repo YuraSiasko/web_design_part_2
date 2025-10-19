@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>🎵 Музичні кліпи</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🎬 Музичні кліпи</h1>
+  </header>
+
+  <section class="controls">
+    <input type="text" id="searchInput" placeholder="Пошук за виконавцем або піснею">
+    <button id="sortBtn">Сортувати за переглядами</button>
+    <button id="countBtn">Підрахувати перегляди</button>
+    <button id="showCreateBtn">Додати кліп</button>
+  </section>
+
+  <main id="clipsContainer"></main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
