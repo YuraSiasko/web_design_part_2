@@ -1,4 +1,3 @@
-// index.js — фронтенд працює з backend через REST API
 const API = "http://localhost:3000/clips";
 
 const container = document.getElementById("clipsContainer");

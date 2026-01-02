@@ -22,7 +22,7 @@ const App = () => {
                         <Route path="/item/:id" element={<ItemPage />} /> 
                         
                         <Route path="/cart" element={<h2>Сторінка кошика</h2>} />
-                        <Route path="*" element={<h2>404: Сторінка не знайдена</h2>} />
+                        <Route path="/about" element={<h2>Про нас</h2>} />
                     </Routes>
 
                     <Footer />
